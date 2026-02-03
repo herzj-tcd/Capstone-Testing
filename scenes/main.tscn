@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bd23i6lr8ynmi"]
+
+[ext_resource type="PackedScene" uid="uid://bykl7s3j04ku3" path="res://scenes/part.tscn" id="1_o5qli"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Part" parent="." instance=ExtResource("1_o5qli")]
+position = Vector2(319, 208)
+
+[node name="Part2" parent="." instance=ExtResource("1_o5qli")]
+position = Vector2(763, 249)
+
+[node name="PartMkI" parent="." instance=ExtResource("1_o5qli")]
+position = Vector2(170, 424)
+
+[node name="PartMkI2" parent="." instance=ExtResource("1_o5qli")]
+position = Vector2(436, 502)
