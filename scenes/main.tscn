@@ -1,17 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://bd23i6lr8ynmi"]
+[gd_scene load_steps=3 format=3 uid="uid://bd23i6lr8ynmi"]
 
+[ext_resource type="Script" uid="uid://bola63jbsxbcx" path="res://scripts/main.gd" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://bykl7s3j04ku3" path="res://scenes/part.tscn" id="1_o5qli"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_0wfyh")
 
-[node name="Part" parent="." instance=ExtResource("1_o5qli")]
+[node name="Part1" parent="." instance=ExtResource("1_o5qli")]
 position = Vector2(319, 208)
 
 [node name="Part2" parent="." instance=ExtResource("1_o5qli")]
 position = Vector2(763, 249)
 
-[node name="PartMkI" parent="." instance=ExtResource("1_o5qli")]
+[node name="Part3" parent="." instance=ExtResource("1_o5qli")]
 position = Vector2(170, 424)
 
-[node name="PartMkI2" parent="." instance=ExtResource("1_o5qli")]
+[node name="Part4" parent="." instance=ExtResource("1_o5qli")]
 position = Vector2(436, 502)
