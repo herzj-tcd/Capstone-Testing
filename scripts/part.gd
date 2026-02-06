@@ -30,7 +30,7 @@ func _on_button_button_down() -> void:
 	if connected_to != null:
 		var old = connected_to
 		connected_to = null
-		emit_signal("parts_disconnected", self, old)
+		parts_disconnected.emit(self, old)
 		
 # stops dragging the part when the button is released
 func _on_button_button_up() -> void:
@@ -43,4 +43,4 @@ func _on_connector_area_entered(area: Area2D) -> void:
 			snap_target = other_part.position # problem here maybe
 			snap_target += area.position * 2 
 			connected_to = other_part
-			emit_signal("parts_connected", self, other_part)
+			parts_connected.emit(self, other_part)
