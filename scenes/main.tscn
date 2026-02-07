@@ -17,8 +17,3 @@ position = Vector2(170, 424)
 
 [node name="Part4" parent="." instance=ExtResource("1_o5qli")]
 position = Vector2(436, 502)
-
-[connection signal="parts_connected" from="Part1" to="." method="_on_parts_connected"]
-[connection signal="parts_disconnected" from="Part1" to="." method="_on_parts_disconnected"]
-[connection signal="parts_connected" from="Part2" to="." method="_on_parts_connected"]
-[connection signal="parts_disconnected" from="Part2" to="." method="_on_parts_disconnected"]
